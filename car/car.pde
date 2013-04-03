@@ -16,23 +16,24 @@ void draw() {
   fill(110, 170, 120);
   rect(0, 310, width, height - 310);
   
-  // draw a yellow car
+  // draw a green car
   fill(150, 150, 150);
   ellipse(x + 30, 320, 90, 20);
 
-  fill(250,250,0);
+  fill(0,255,0);
   rect(x, 300, 80, 20);
   rect(x + 10, 285, 60, 15);
   
-  fill(150, 170, 200);
+  fill(0);
   rect(x + 47, 287, 20, 10);
   rect(x + 25, 287, 20, 10);
   
-  fill(0, 0, 0);
+  fill(0);
   ellipse(x + 20, 320, 20, 20);
   ellipse(x + 60, 320, 20, 20);
   
   x = x + v;
+  
   if(x >= 500) {
     v = v * -1;
   }
